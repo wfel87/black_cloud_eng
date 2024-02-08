@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Computer Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Computer Quiz!</h1>
+        <p>Do you want to play?</p>
+        <button onclick="startQuiz()">Yes</button>
+    </div>
+
+    <div id="quiz-container" class="container hidden">
+        <h2>Question 1</h2>
+        <p id="question">What does CPU stand for?</p>
+        <input type="text" id="answer" placeholder="Your answer">
+        <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div id="result-container" class="container hidden">
+        <h2>Your Result</h2>
+        <p id="result"></p>
+        <p id="score"></p>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
